@@ -19,3 +19,5 @@ Java_com_iu3_rpo_MainActivity_stringFromJNI(
     SLOG_INFO("Hello from spdlog {}", 2021);
     return env->NewStringUTF(hello.c_str());
 }
+
+//comment

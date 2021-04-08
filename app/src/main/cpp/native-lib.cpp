@@ -20,4 +20,6 @@ Java_com_iu3_rpo_MainActivity_stringFromJNI(
     return env->NewStringUTF(hello.c_str());
 }
 
-//comment
+
+
+//comment fjhfjhsh

@@ -46,3 +46,17 @@ target_link_libraries( # Specifies the target library.
                        # Links the target library to the log library
                        # included in the NDK.
                        ${log-lib} )
+
+add_library(spdlog STATIC IMPORTED)
+
+set_target_properties(
+        spdlog PROPERTIES IMPORTED_LOCATION
+        /Users/polinaa_bu/AndroidStudioProjects/libs/spdlog/build/${ANDROID_ABI}/libspdlog.a
+
+)
+
+target_include_directories(
+        native-lib PUBLIC
+        /Users/polinaa_bu/AndroidStudioProjects/libs/spdlog/spdlog/include
+
+)
